@@ -1,1 +1,1 @@
-# HELLO gerai
+# Hello, this my first Front End project. Please contact me for internship opportunities as I am eager to learn more and more. tadas.cesna1@gmail.com
