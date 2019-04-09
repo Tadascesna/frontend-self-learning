@@ -1,0 +1,55 @@
+.trending-card {
+  background-color: $white;
+  border-radius: 2%;
+  cursor: pointer;
+  margin-bottom: 40px;
+  overflow: hidden;
+  @include transition(0.5s);
+  z-index: 1000;
+
+  &:hover {
+    box-shadow: 0px 4px 20px 2px $color-shadow;
+    transform: translate(0px, -3px);
+  }
+
+  &__image-wrapper {
+    height: 180px;
+    position: relative;
+    width: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  &__text-wrapper {
+    padding: 40px;
+
+    &__header {
+      color: $color-text-black;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    &__paragraph {
+      color: $color-text-gray;
+      font-size: 13px;
+    }
+
+    &__iconFlex {
+      align-items: center;
+      display: flex;
+    }
+
+    &__time {
+      color: $color-text-gray;
+      font-size: 13px;
+      font-style: italic;
+      margin-left: 10px;
+    }
+  }
+}

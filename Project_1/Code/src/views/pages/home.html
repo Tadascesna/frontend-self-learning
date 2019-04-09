@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+@@include('../components/head.html', {
+"title": "Home"
+})
+
+<body class="home">
+  @@include('../components/header.html',{
+    "home": "--active",
+    "discovery": "",
+    "photos": "",
+    "contact": ""
+  })
+  @@include('../components/mobileNavigation.html')
+
+<div class="container">
+<div class="row">
+
+  @@include('../components/Banners/landing-main.html', {
+    "topHeader": "world news",
+    "belowHeader": "Amazing places in America to visit",
+    "belowText": "For some reason — this country, this city, this neighborhood, this particular street —  is the place you are living a majority of your life in." 
+    })
+
+  @@include('../components/landing-panel.html')
+
+
+  @@loop('../components/discoveries-card.html', [
+    {"Category": "Technology", 
+    "Headline": "Lorem Ipsum Smipsum",
+    "Summary": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, rem?",
+    "Time": " 2 min ago " }, 
+
+    {"Category": "Traveling", 
+    "Headline": "Unc eine Schwaine",
+    "Summary": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, rem?",
+    "Time": " 2 min ago"}
+    ])
+</div>
+</div>
+
+
+  <br>
+  <br> 
+  @@include('../components/section-head.html',{
+    "Header": "Trending"
+  })
+
+
+
+  <br>
+  <div class="container">
+      <div class="row">
+              @@loop('../components/cards/trending.html', [
+                  {
+                      "cardTitle": "Vadipig elit ipsum dolor sit",
+                      "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                      "timecard": "2min ago"     
+                  },
+                  {
+                      "cardTitle": "It amet onsecr adiping elit",
+                      "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                      "timecard": "2min ago"     
+                  },
+                  {
+                      "cardTitle": "Dolor sit amet consectetur",
+                      "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                      "timecard": "2min ago"     
+                  }
+              ])
+      </div>
+  </div>
+  <br>
+  @@include('../components/section-head.html',{
+    "Header": "happening now"
+  })
+
+  <div class="container">
+    <div class="row">
+      <div class="bandom">
+        @@loop('../components/cards/large.html', [
+            {
+            "cardCategory": "Dabar veikia! Magic! :D",
+            "cardTitle": "Vadipig elit ipsum dolor sit",
+            "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "timecard": "2min ago"
+            },
+            {
+              "cardCategory": "Dabar veikia! Magic! :D",
+              "cardTitle": "Vadipig elit ipsum dolor sit",
+              "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+              "timecard": "2min ago"
+            }
+            ])
+        </div>
+
+        <div class="kazka">
+        @@loop('../components/cards/story-small.html', [
+        {
+        "cardTitle": "Small title",
+        "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "timecard": "4 days ago by",
+        "timecardAuthor": " Blynas"
+        },
+        {
+        "cardTitle": "Small title",
+        "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "timecard": "4 days ago by",
+        "timecardAuthor": " Blynas"
+        },
+        {
+        "cardTitle": "Small title",
+        "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "timecard": "4 days ago by",
+        "timecardAuthor": " Blynas"
+        }
+        ])
+      </div>
+
+  
+      </div>
+    </div>
+  <br>
+
+  <br> 
+
+    @@include('../components/footer.html',{
+      "emailText": "Stay in touch with us for the freshest products!"
+    })
+
+
+
+</body>
+</html>

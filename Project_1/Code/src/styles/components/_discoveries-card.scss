@@ -1,0 +1,41 @@
+.discoveriesCard {
+  background-color: $white;
+  padding-bottom: 41px;
+  padding-top: 41px;
+
+
+  &__pinkHeadline {
+    color: $color-pink-headline;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  &__headline {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+
+  &__summary {
+    color: $color-grey-card;
+    font-size: 16px;
+    line-height: 1.63;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+}
+
+.timeContainer {
+  display: flex;
+
+  &__time {
+    color: $color-grey-card;
+    font-size: 13px;
+    font-style: italic;
+    margin: 0;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        // "Toolkits/": true
+    },
+    "search.exclude": {
+        "Toolkits/": true,
+        "node_modules/": true
+    },
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+}

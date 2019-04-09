@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+  <defs>
+    <style>
+      .photos {
+        opacity: 0.5;
+      }
+
+      .photos-2 {
+        fill: #343638;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="photos" class="photos" transform="translate(-935 -837)">
+    <path id="photos-2" data-name="photos" class="photos-2" d="M0,0V14H16V0ZM14,12H11L6.5,7.5,2,12V2H14Z" transform="translate(935 837)"/>
+  </g>
+</svg>

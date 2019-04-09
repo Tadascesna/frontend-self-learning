@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14.001" viewBox="0 0 16 14.001">
+  <defs>
+    <style>
+      .menu {
+        fill: #343638;
+      }
+    </style>
+  </defs>
+  <g id="menu_icon" data-name="menu icon" transform="translate(-16 -57)">
+    <path id="menu_icon-2" data-name="menu icon" class="menu" d="M-6407-6020a1,1,0,0,1-1-1,1,1,0,0,1,1-1h14a1,1,0,0,1,1,1,1,1,0,0,1-1,1Zm0-6a1,1,0,0,1-1-1,1,1,0,0,1,1-1h8a1,1,0,0,1,1,1,1,1,0,0,1-1,1Zm0-6a1,1,0,0,1-1-1,1,1,0,0,1,1-1h14a1,1,0,0,1,1,1,1,1,0,0,1-1,1Z" transform="translate(6424 6091)"/>
+  </g>
+</svg>

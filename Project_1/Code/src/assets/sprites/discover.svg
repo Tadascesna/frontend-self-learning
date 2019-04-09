@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .discover {
+        opacity: 0.5;
+      }
+
+      .discover-2 {
+        fill: #343638;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="discover" class="discover" transform="translate(-866 -836)">
+    <path id="discover-2" data-name="discover" class="cls-2" d="M12,4,6.7,6.7,4,12,9.3,9.3ZM8,16a8,8,0,1,1,8-8A8.024,8.024,0,0,1,8,16Z" transform="translate(866 836)"/>
+  </g>
+</svg>

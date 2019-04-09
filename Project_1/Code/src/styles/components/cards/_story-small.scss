@@ -1,0 +1,60 @@
+.smallCard {
+  @include transition(0.5s);
+  border-radius: 2%;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0px 4px 20px 2px $color-shadow;
+    transform: translate(0px, -3px);
+  }
+
+  &__image-wrapper {
+    height: 180px;
+    position: relative;
+    width: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  &__text {
+
+    &__header {
+      color: $color-text-black;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 0px;
+    }
+
+    &__icon {
+      margin-top: 10px;
+    }
+
+    &__iconFlex {
+      align-items: center;
+      display: flex;
+      margin-bottom: 40px;
+    }
+
+    &__time {
+      align-self: center;
+      color: $color-text-gray;
+      font-size: 13px;
+      font-style: italic;
+      margin-bottom: 0px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
+    &__author {
+      text-decoration: underline;
+    }
+  }
+}

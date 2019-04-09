@@ -1,0 +1,95 @@
+.wrapper {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.landingImage {
+  background: url('https://source.unsplash.com/random/840x600');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100%;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  z-index: -100;
+
+  @include respond-to($breakpoint-desktop) {
+    width: 58%;
+  }
+}
+
+.landingImage__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  padding: 10% 0%;
+
+
+  @include respond-to($breakpoint-tablet) {
+    margin-top: 5%;
+    padding: 10% 0%;
+  }
+
+  @include respond-to($breakpoint-desktop) {
+    margin-top: 5%;
+    padding: 30% 0%;
+  }
+}
+
+.landingImage__upperHeader {
+  border-bottom: 2px solid $white;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+
+  &__text {
+    color: $white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+}
+
+
+.landingImage__lowerHeader__text {
+  box-sizing: border-box;
+  color: $white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.landingImage__paragraph__text {
+  color: $white;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.landingImage__link {
+  color: $white;
+  font-size: 11px;
+  font-weight: bold;
+  height: 40px;
+  margin-top: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 134px;
+}
+
+.landingImage__button {
+  @include transition();
+  align-items: center;
+  background-color: $color-pink-button;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+
+  &:hover {
+    filter: brightness(85%);
+  }
+}

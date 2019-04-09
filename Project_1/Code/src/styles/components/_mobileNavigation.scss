@@ -1,0 +1,87 @@
+.mobileNavigation {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navMenu {
+  background-color: $color-light-gray;
+  @include transition();
+  box-shadow: 0px 0px 60px 0px $color-box-shadow;
+  box-sizing: border-box;
+  display: block;
+  height: 100vh;
+  left: -60vw;
+  overflow: hidden;
+  padding-left: 40px;
+  padding-top: 40px;
+  position: fixed;
+  width: 60vw;
+  z-index: 4000;
+
+  &.-active {
+    opacity: 1;
+    transform: translateX(60vw);
+  }
+
+  &__logo--wrapper {
+    margin-bottom: 87px;
+  }
+
+  &__logo {
+    color: $color-primary;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 87px;
+    opacity: 1;
+    text-transform: uppercase;
+  }
+
+  &__Container {
+    align-content: center;
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__links {
+    @include transition();
+    align-self: center;
+    color: $color-secondary;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 100%;
+    margin-left: 40px;
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  &__profile-pic-wrapper {
+    border-radius: 50%;
+    display: inline-flex;
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.invisibleElement {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  width: 40vw;
+  z-index: 4000;
+
+  &.-active {
+    display: block;
+  }
+}

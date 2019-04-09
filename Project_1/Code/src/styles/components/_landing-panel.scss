@@ -1,0 +1,49 @@
+.panel {
+  padding: 40px 0px;
+
+  @include respond-to($breakpoint-tablet) {
+    padding-bottom: 80px;
+    padding-top: 40px;
+  }
+
+  @include respond-to($breakpoint-desktop) {
+    padding: 100px 0px;
+  }
+
+  &__box {
+    border-bottom: 2px solid $color-gray;
+    display: flex;
+    justify-content: space-between;
+
+    &__header {
+      color: $black;
+      font-family: helvetica;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0px 0px 40px;
+      text-transform: uppercase;
+    }
+
+    &__arrows-box {
+      align-content: center;
+      display: flex;
+      justify-content: space-between;
+      width: 50px;
+    }
+
+    &__arrows {
+      align-self: center;
+      display: inline-block;
+      opacity: 0.4;
+      @include transition;
+
+      &.-left {
+        transform: rotateZ(180deg);
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

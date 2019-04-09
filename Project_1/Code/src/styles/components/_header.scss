@@ -1,0 +1,152 @@
+.header {
+  background-color: $color-light-gray;
+  box-sizing: border-box;
+  display: flex;
+  height: 50px;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+  &--left {
+    align-items: center;
+    color: $color-primary;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  &--right {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.profile-pic-wrapper {
+  height: 30px;
+  width: 30px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+}
+
+.main-navigation {
+  display: flex;
+  font-size: 0.6875rem;
+  height: 100%;
+  margin-right: 40px;
+
+  &__link,
+  &__link--active {
+    @include transition();
+    color: $color-secondary;
+    font-weight: 700;
+    opacity: 0.5;
+    padding-left: 20px;
+    padding-top: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__link--active {
+    opacity: 1;
+  }
+
+  &__link:hover {
+    color: $color-primary;
+    opacity: 1;
+  }
+}
+
+.sheader {
+  background-color: $color-light-gray;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+  &__flexer {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    cursor: pointer;
+  }
+
+  &__logo {
+    color: $color-primary;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__profile-pic-wrapper {
+    border-radius: 50%;
+    display: flex;
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.dropdown {
+  box-sizing: border-box;
+  display: inline-flex;
+  height: 100%;
+  justify-content: space-between;
+  overflow: hidden;
+
+  &:hover .dropdown__content {
+    color: $black;
+    display: block;
+  }
+
+  &__content {
+    background-color: $color-light-gray;
+    display: none;
+    max-height: 200px;
+    min-width: 120px;
+    position: absolute;
+    top: 50px;
+    width: 200px;
+    z-index: 1;
+
+    &__link {
+      @include transition();
+      color: $color-secondary;
+      display: block;
+
+      float: none;
+      font-weight: bold;
+      height: 100%;
+      opacity: 0.5;
+      padding: 10px 20px;
+      text-align: left;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $black;
+        font-weight: bolder;
+        opacity: 1;
+      }
+    }
+  }
+}
