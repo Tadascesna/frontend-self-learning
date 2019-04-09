@@ -1,0 +1,50 @@
+
+<div class="container">
+
+    @@include('../section-head.html',{
+      "Header": "happening now"
+    })
+
+  <div class="row">
+    <div class="col-l-8 col-m-12 col-s-12">
+      @@loop('../cards/large.html', [
+          {
+          "cardCategory": "Travel",
+          "cardTitle": "Vadipig elit ipsum dolor sit",
+          "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          "timecard": "2min ago"
+          },
+          {
+            "cardCategory": "Discovery",
+            "cardTitle": "Vadipig elit ipsum dolor sit",
+            "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "timecard": "2min ago"
+          }
+          ])
+      </div>
+
+      <div class="col-l-4 col-m-6 col-s-12">
+        @@loop('../cards/story-small.html', [
+          {
+          "cardTitle": "Small title",
+          "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          "timecard": "4 days ago by",
+          "timecardAuthor": " Blynas"
+          },
+          {
+          "cardTitle": "Small title",
+          "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          "timecard": "4 days ago by",
+          "timecardAuthor": " Blynas"
+          },
+          {
+          "cardTitle": "Small title",
+          "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          "timecard": "4 days ago by",
+          "timecardAuthor": " Blynas"
+          }
+        ])
+      </div>
+
+    </div>
+  </div>

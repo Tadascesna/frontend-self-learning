@@ -40,86 +40,13 @@
 </div>
 
 
-  <br>
-  <br> 
-  @@include('../components/section-head.html',{
-    "Header": "Trending"
-  })
+
+  @@include('../components/blocks/block-trending.html')
 
 
+  @@include('../components/blocks/block-happening.html')
 
-  <br>
-  <div class="container">
-      <div class="row">
-              @@loop('../components/cards/trending.html', [
-                  {
-                      "cardTitle": "Vadipig elit ipsum dolor sit",
-                      "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                      "timecard": "2min ago"     
-                  },
-                  {
-                      "cardTitle": "It amet onsecr adiping elit",
-                      "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                      "timecard": "2min ago"     
-                  },
-                  {
-                      "cardTitle": "Dolor sit amet consectetur",
-                      "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-                      "timecard": "2min ago"     
-                  }
-              ])
-      </div>
-  </div>
-  <br>
-  @@include('../components/section-head.html',{
-    "Header": "happening now"
-  })
 
-  <div class="container">
-    <div class="row">
-      <div class="bandom">
-        @@loop('../components/cards/large.html', [
-            {
-            "cardCategory": "Dabar veikia! Magic! :D",
-            "cardTitle": "Vadipig elit ipsum dolor sit",
-            "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            "timecard": "2min ago"
-            },
-            {
-              "cardCategory": "Dabar veikia! Magic! :D",
-              "cardTitle": "Vadipig elit ipsum dolor sit",
-              "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-              "timecard": "2min ago"
-            }
-            ])
-        </div>
-
-        <div class="kazka">
-        @@loop('../components/cards/story-small.html', [
-        {
-        "cardTitle": "Small title",
-        "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "timecard": "4 days ago by",
-        "timecardAuthor": " Blynas"
-        },
-        {
-        "cardTitle": "Small title",
-        "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "timecard": "4 days ago by",
-        "timecardAuthor": " Blynas"
-        },
-        {
-        "cardTitle": "Small title",
-        "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "timecard": "4 days ago by",
-        "timecardAuthor": " Blynas"
-        }
-        ])
-      </div>
-
-  
-      </div>
-    </div>
   <br>
 
   <br> 

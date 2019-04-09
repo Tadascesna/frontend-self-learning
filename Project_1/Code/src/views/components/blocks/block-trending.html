@@ -1,0 +1,27 @@
+<div class="container">
+
+    @@include('../section-head.html',{
+      "Header": "Trending"
+    })
+  <div class="row">
+
+        @@loop('../cards/trending.html', [
+          {
+            "cardTitle": "Vadipig elit ipsum dolor sit",
+            "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "timecard": "2min ago"     
+          },
+          {
+            "cardTitle": "It amet onsecr adiping elit",
+            "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "timecard": "2min ago"     
+          },
+          {
+            "cardTitle": "Dolor sit amet consectetur",
+            "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "timecard": "2min ago"     
+          }
+        ])
+    </div>
+
+</div>
