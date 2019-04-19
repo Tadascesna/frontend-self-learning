@@ -1,5 +1,4 @@
 
-<div class="container">
 
     @@include('../section-head.html',{
       "Header": "happening now"
@@ -22,29 +21,31 @@
           }
           ])
       </div>
-
-      <div class="col-l-4 col-m-6 col-s-12">
-        @@loop('../cards/story-small.html', [
-          {
-          "cardTitle": "Small title",
-          "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-          "timecard": "4 days ago by",
-          "timecardAuthor": " Blynas"
-          },
-          {
-          "cardTitle": "Small title",
-          "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-          "timecard": "4 days ago by",
-          "timecardAuthor": " Blynas"
-          },
-          {
-          "cardTitle": "Small title",
-          "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-          "timecard": "4 days ago by",
-          "timecardAuthor": " Blynas"
-          }
-        ])
+    <div class="col-l-4 col-m-6 col-s-12">
+      <div class="container-inner">
+        <div class="row">
+            @@loop('../cards/story-small.html', [
+              {
+              "cardTitle": "Small title",
+              "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+              "timecard": "4 days ago by",
+              "timecardAuthor": " Blynas"
+              },
+              {
+              "cardTitle": "Small title",
+              "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+              "timecard": "4 days ago by",
+              "timecardAuthor": " Blynas"
+              },
+              {
+              "cardTitle": "Small title",
+              "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+              "timecard": "4 days ago by",
+              "timecardAuthor": " Blynas"
+              }
+            ])
+          </div>
+        </div>
       </div>
 
     </div>
-  </div>

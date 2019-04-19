@@ -1,5 +1,9 @@
 $_columns: 12;
 
+.container-inner {
+  box-sizing: border-box;
+  width: 100%;
+}
 .container {
   box-sizing: border-box;
   padding: 0 $mobile-padding;
@@ -35,6 +39,12 @@ $_columns: 12;
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
+
+  .container{
+    box-sizing: border-box;
+    padding: 0 $tablet-padding;
+  }
+
   .container {
     margin: 0 auto;
     width: $tablet-container-width;
@@ -66,6 +76,12 @@ $_columns: 12;
 }
 
 @media screen and (min-width: $breakpoint-desktop) {
+ 
+  .container{
+    box-sizing: border-box;
+    padding: 0 $desktop-padding;
+  }
+  
   .container {
     width: $desktop-container-width;
   }
@@ -96,6 +112,7 @@ $_columns: 12;
 
 // mobile only
 @media screen and (max-width: $breakpoint-tablet - 1px) {
+  
   .hidden-s,
   .visible-m,
   .visible-l {
