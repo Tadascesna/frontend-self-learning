@@ -16,6 +16,10 @@
     position: relative;
     width: 100%;
 
+    @include respond-to($breakpoint-desktop) {
+      height: 210px;
+    }
+
     img {
       height: 100%;
       object-fit: cover;
