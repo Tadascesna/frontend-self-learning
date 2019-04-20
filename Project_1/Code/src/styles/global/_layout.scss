@@ -4,6 +4,7 @@ $_columns: 12;
   box-sizing: border-box;
   width: 100%;
 }
+
 .container {
   box-sizing: border-box;
   padding: 0 $mobile-padding;
@@ -40,13 +41,10 @@ $_columns: 12;
 
 @media screen and (min-width: $breakpoint-tablet) {
 
-  .container{
-    box-sizing: border-box;
-    padding: 0 $tablet-padding;
-  }
-
   .container {
+    box-sizing: border-box;
     margin: 0 auto;
+    padding: 0 $tablet-padding;
     width: $tablet-container-width;
   }
 
@@ -76,13 +74,10 @@ $_columns: 12;
 }
 
 @media screen and (min-width: $breakpoint-desktop) {
- 
-  .container{
+
+  .container {
     box-sizing: border-box;
     padding: 0 $desktop-padding;
-  }
-  
-  .container {
     width: $desktop-container-width;
   }
 
