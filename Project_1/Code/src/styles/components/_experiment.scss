@@ -1,0 +1,29 @@
+.landingImage2 {
+  background: url('https://source.unsplash.com/random/840x600');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 400px;
+  z-index: 100;
+  position: absolute;
+
+  width: 100vw;
+  
+
+  @include respond-to($breakpoint-desktop) {
+    width: 60vw;
+    height: 600px;
+  }
+}
+
+.whiteBackground {
+  width: 100vw;
+  background-color: $white;
+  position: absolute;
+  z-index: 1000;
+
+  @include respond-to($breakpoint-desktop) {
+    width: 40vw;
+  }
+}

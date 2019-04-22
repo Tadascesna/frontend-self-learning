@@ -11,13 +11,12 @@
   background-size: cover;
   box-sizing: border-box;
   height: 100%;
-  position: absolute;
-  top: 50px;
-  width: 100%;
-  z-index: -100;
+  position: relative;
+  width: 100vw;
+  
 
   @include respond-to($breakpoint-desktop) {
-    width: 58%;
+    width: 60vw;
   }
 }
 
