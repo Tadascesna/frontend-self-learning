@@ -1,0 +1,13 @@
+.discovery-wrapper {
+  margin-bottom: 50px;
+  margin-top: 40px;
+
+  @include respond-to($breakpoint-tablet) {
+    margin-bottom: 100px;
+    margin-top: 0px;
+  }
+
+  @include respond-to($breakpoint-desktop) {
+    margin-top: 100px;
+  }
+}

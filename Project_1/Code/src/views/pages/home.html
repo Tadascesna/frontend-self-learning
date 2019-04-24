@@ -14,61 +14,31 @@
   @@include('../components/mobileNavigation.html')
 
 
-<div class="row">
+  @@include('../components/landing-background.html')
 
-  @@include('../components/Banners/landing-main.html', {
-    "topHeader": "world news",
-    "belowHeader": "Amazing places in America to visit",
-    "belowText": "For some reason — this country, this city, this neighborhood, this particular street —  is the place you are living a majority of your life in." 
-    })
+  <div class="container">
+    <div class="row">
 
-  @@include('../components/landing-panel.html')
+      @@include('../components/cards/landing-image.html', {
+        "topHeader": "world news",
+        "belowHeader": "Amazing places in America to visit",
+        "belowText": "For some reason — this country, this city, this neighborhood, this particular street —  is the place you are living a majority of your life in." 
+      })
 
+      @@include('../components/blocks/block-discovery.html')
 
-  @@loop('../components/discoveries-card.html', [
-    {"Category": "Technology", 
-    "Headline": "Lorem Ipsum Smipsum",
-    "Summary": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, rem?",
-    "Time": " 2 min ago " }, 
+      <div class="container">
+        @@include('../components/blocks/block-trending.html')
 
-    {"Category": "Traveling", 
-    "Headline": "Unc eine Schwaine",
-    "Summary": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, rem?",
-    "Time": " 2 min ago"}
-    ])
-</div>
+        @@include('../components/blocks/block-happening.html')
 
+      </div>
+    </div>
+  </div>
 
-
-<div class="container">
-
-  @@include('../components/blocks/block-trending.html')
-
-
-  @@include('../components/blocks/block-happening.html')
-</div>
-
-  <br>
-
-  <br> 
-
-    @@include('../components/footer.html',{
-      "emailText": "Stay in touch with us for the freshest products!"
-    })
-
-    @@include('../components/experiment.html')
-
-    @@loop('../components/discoveries-card.html', [
-    {"Category": "Technology", 
-    "Headline": "Lorem Ipsum Smipsum",
-    "Summary": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, rem?",
-    "Time": " 2 min ago " }, 
-
-    {"Category": "Traveling", 
-    "Headline": "Unc eine Schwaine",
-    "Summary": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, rem?",
-    "Time": " 2 min ago"}
-    ])
+@@include('../components/footer.html',{
+  "emailText": "Stay in touch with us for the freshest products!"
+})
 
 </body>
 </html>

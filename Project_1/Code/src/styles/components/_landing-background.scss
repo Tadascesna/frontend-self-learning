@@ -1,29 +1,35 @@
-.landingImage2 {
+.imageBackground {
   background: url('https://source.unsplash.com/random/840x600');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
   height: 400px;
-  z-index: 100;
   position: absolute;
-
+  top: 50px;
   width: 100vw;
-  
+  z-index: -1;
 
   @include respond-to($breakpoint-desktop) {
-    width: 60vw;
     height: 600px;
+    width: 60vw;
   }
 }
 
 .whiteBackground {
-  width: 100vw;
   background-color: $white;
+  height: 580px;
   position: absolute;
-  z-index: 1000;
+  top: 450px;
+  width: 100vw;
+  z-index: -2;
+
+  @include respond-to($breakpoint-tablet) {
+    height: 400px;
+  } 
 
   @include respond-to($breakpoint-desktop) {
-    width: 40vw;
+    height: 600px;
+    top: 50px;
   }
 }
