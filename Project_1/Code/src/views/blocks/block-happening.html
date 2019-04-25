@@ -1,12 +1,12 @@
 
 
-    @@include('../section-head.html',{
+    @@include('../components/section-head.html',{
       "Header": "happening now"
     })
 
   <div class="row">
     <div class="col-l-8 col-m-12 col-s-12">
-      @@loop('../cards/large.html', [
+      @@loop('../components/cards/large.html', [
           {
           "cardCategory": "Travel",
           "cardTitle": "Vadipig elit ipsum dolor sit",
@@ -24,7 +24,7 @@
     <div class="col-l-4 col-m-12 col-s-12">
       <div class="container-inner">
         <div class="row">
-            @@loop('../cards/story-small.html', [
+            @@loop('../components/cards/story-small.html', [
               {
               "cardTitle": "Small title",
               "cardParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
