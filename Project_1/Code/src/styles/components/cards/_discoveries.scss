@@ -1,6 +1,17 @@
 .discoveriesCard {
   background-color: $white;
-  padding-top: 41px;
+  margin-top: 41px;
+
+  @include transition(0.1s);
+
+  &:hover {
+    border-right: solid 2px $color-primary;
+  }
+
+  &--link {
+    color: $black;
+    text-decoration: none;
+  }
 
   &__pinkHeadline {
     color: $color-pink-headline;

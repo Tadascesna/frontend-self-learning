@@ -31,13 +31,11 @@
     font-weight: 400;
     margin: 0;
   }
-  
 
   &:hover {
     opacity: 0.8;
     transform: translate(0px, -3px);
   }
-
 
   &__text {
     display: flex;
@@ -51,7 +49,6 @@
       font-weight: bold;
       margin: 0;
     }
-
 
     &__paragraph {
       color: $white;
