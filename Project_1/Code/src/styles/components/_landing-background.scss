@@ -18,11 +18,19 @@
 
 .whiteBackground {
   background-color: $white;
-  height: 580px;
+  height: 560px;
   position: absolute;
   top: 450px;
   width: 100vw;
   z-index: -2;
+
+  @include respond-to($breakpoint-small-mobile) {
+    height: 530px;
+  }
+
+  @include respond-to($breakpoint-bigger-mobile) {
+    height: 520px;
+  }
 
   @include respond-to($breakpoint-tablet) {
     height: 400px;
